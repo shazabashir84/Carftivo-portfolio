@@ -6,7 +6,7 @@ Built with **HTML**, **SCSS**, **Bootstrap**, and **JavaScript**, it showcases p
 ---
 
 ## 🚀 Live Demo  
-🔗 [View Website](https://yourusername.github.io/yourprojectname/)  
+🔗 [View Website](https://shazabashir84.github.io/Carftivo-portfolio/))  
 *(Replace with your actual GitHub Pages link)*
 
 ---
