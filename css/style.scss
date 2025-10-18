@@ -1,0 +1,1344 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// font links
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+// variables
+$haeder-font: "Mulish", sans-serif;
+$para-font: "Roboto Flex", sans-serif;
+$sub-font: "Raleway", sans-serif;
+$padding-cont: 60px 0;
+
+$para-color: #d9d9d9;
+$red-color: #ff4d4f;
+$red-opcit: color-mix(in srgb, $red-color, transparent 90%);
+$icons-color-opaci: color-mix(in srgb, $para-color, transparent 94%);
+$para-color-opaci: color-mix(in srgb, $para-color, transparent 30%);
+
+$progress-barBg: linear-gradient(90deg, $red-color,
+        color-mix(in srgb, $red-color, #ff6b9d 50%));
+$cardBg: rgb(28, 28, 28);
+$tagBg: linear-gradient(135deg, $red-color,
+        color-mix(in srgb, $red-color, #6c5ce7 20%));
+
+%main-section-padding-bg {
+    padding: $padding-cont;
+    background-color: #141414;
+    // max-width: 100%;
+
+}
+
+%tag-header {
+    color: $red-color;
+    font-size: 14px;
+    font-family: $para-font;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 24px;
+    position: relative;
+
+    &::after {
+        content: " ";
+        height: 0.5px;
+        width: 50px;
+        background-color: $red-color;
+        display: block;
+        margin: 8px auto;
+        /* auto to center line*/
+    }
+
+
+}
+
+%main-header {
+    margin: 0 0 24px;
+    font-family: $haeder-font;
+    font-size: 56px;
+    color: #ededed;
+    font-weight: 300;
+    text-transform: capitalize;
+
+
+}
+
+%margin-padding-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 22px;
+    padding: 0 12px 60px;
+}
+
+%para-heading {
+    margin: 0 18px;
+    font-size: 18px;
+    font-family: $para-font;
+    font-weight: 400;
+    color: $para-color;
+    line-height: 32px;
+    max-width: 900px;
+
+}
+
+%section-three-sub-header {
+    span {
+        font-size: 13px;
+        font-family: $para-font;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1.36px;
+        padding: 13px 19.2px;
+        margin: 0 0 16px;
+        border-radius: 15px;
+        background-image: $tagBg;
+        line-height: 13px;
+        display: inline-block;
+    }
+
+    h2 {
+        font-size: 26px;
+        font-family: $haeder-font;
+        font-size: 36px;
+        font-weight: 600;
+        color: #ededed;
+        text-transform: capitalize;
+        letter-spacing: -1px;
+        margin: 0 0 16px;
+
+
+    }
+
+    p {
+        font-size: 16px;
+        font-family: $para-font;
+        font-weight: 400;
+        line-height: 27px;
+        color: $para-color-opaci;
+
+    }
+}
+
+%tag-button {
+    padding: 8px 16px;
+    font-size: 13px;
+    font-family: $para-font;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $red-color;
+    background-color: $red-opcit;
+    border-radius: 15px;
+    letter-spacing: 0.5px;
+
+}
+
+%iconCV {
+    font-size: 20px;
+    padding: 12px;
+    background-color: $red-color;
+    border-radius: 10px;
+    line-height: 24px;
+
+}
+
+%cv-details {
+    h3 {
+        margin: 0 0 8px;
+        font-size: 22px;
+        font-family: $haeder-font;
+        color: #ededed;
+
+    }
+
+    .company-name {
+        margin: 0 0 4px;
+        font-family: $para-font;
+        font-size: 16px;
+        color: $para-color-opaci;
+    }
+
+    .durationTag {
+        span {
+            @extend %tag-button;
+
+
+        }
+
+        margin: 0 0 16px;
+
+    }
+
+    .desciption {
+        color: $para-color-opaci;
+        margin: 0 0 24px;
+        font-size: 15.5px;
+        font-family: $para-font;
+
+    }
+}
+
+// section style
+.one {
+    background-image: url(../images/profile-bg-5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    width: 100%;
+
+    // object-fit: cover;
+
+    .oneLayer {
+        background-color: rgba(0, 0, 0, 0.727);
+        height: 100vh;
+
+        .logo {
+            h3 a {
+                text-decoration: none;
+                font-family: $haeder-font;
+                color: #fff;
+            }
+        }
+
+        .navLinks {
+            ul li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: $para-color;
+                    font-weight: 400;
+                    line-height: 24px;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        color: $red-color;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .oneContent {
+            height: 90vh;
+            text-align: center;
+
+            h2 {
+                font-family: $haeder-font;
+                font-size: 48px;
+                font-weight: 700;
+                text-transform: capitalize;
+                line-height: 57px;
+                color: #fff;
+
+            }
+
+            p {
+                color: $red-color;
+                text-transform: capitalize;
+
+                .white {
+                    color: $para-color;
+
+
+                }
+
+                font-family: $para-font;
+                font-size: 24px;
+                padding: 10px 0 0 0;
+                line-height: 36px;
+                margin: 0 0 10px;
+
+
+
+                .auto-type {
+                    border-bottom: #ff4d4f solid 1px;
+                    // text-decoration: underline;
+                    /* Add this to your CSS or SCSS file */
+                    // .typed-cursor {
+                    //   color: $red-color; // Or any color you want
+                    // }
+                }
+            }
+
+            .icons {
+                padding: 30px 0 0 0;
+
+                .iconLink {
+                    border-radius: 50%;
+                    padding: 15px;
+                    margin-left: 5px;
+                    background: $icons-color-opaci;
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+        }
+
+    }
+
+
+}
+
+.two {
+    @extend %main-section-padding-bg;
+
+    .headerTwo {
+        @extend %margin-padding-header;
+
+
+        span {
+            @extend %tag-header;
+
+        }
+
+        h2 {
+            @extend %main-header;
+        }
+
+        p {
+            @extend %para-heading;
+        }
+    }
+
+    .cardCont {
+        background-color: $cardBg;
+        padding: 40px;
+        border-radius: 20px;
+        color: $para-color;
+
+        .cardHeader {
+            position: relative;
+            padding: 0 0 30px;
+
+            img {
+                border-radius: 50%;
+                border: solid 5px $red-color;
+                padding: 2px;
+                margin: 16px;
+
+            }
+
+            // .circle{
+            //     position: absolute;
+            //     top:0;
+            //     z-index: 22;
+            // }
+            h3 {
+                font-family: $haeder-font;
+                font-size: 24px;
+                margin: 0 0 8px;
+                color: $para-color;
+
+
+
+            }
+
+            span {
+                font-family: $para-font;
+                font-size: 15px;
+                margin: 0 0 16px;
+                color: $red-color;
+
+            }
+
+            i {
+                color: #fbbf24;
+                margin: 12px 0 0;
+
+            }
+
+
+        }
+
+        .dividers {
+            width: 100%;
+            display: block;
+            height: 0.5px;
+            background-color: $icons-color-opaci;
+            margin: auto; // adjust spacing as you like
+        }
+
+
+        .cardCounter {
+            padding: 30px 0;
+
+            .cardBody {
+                h4 {
+                    font-family: $haeder-font;
+                    font-size: 28px;
+                    font-weight: 700;
+                    color: $red-color;
+                    margin: 0 0 6px;
+                }
+
+                .para {
+                    font-family: $para-font;
+                    font-size: 13px;
+                    color: $para-color-opaci;
+                    text-transform: uppercase;
+                    // background-color: #d9d9d9;
+                }
+            }
+
+        }
+
+
+
+        .cardButtons {
+            padding: 30px 0;
+
+            button {
+                padding: 12px 24px;
+                background-color: $red-color;
+                border-radius: 12px;
+
+                a {
+                    text-decoration: none;
+                    color: $para-color;
+                    font-size: 15px;
+                    font-family: $para-font;
+                    font-weight: 600;
+                }
+            }
+
+            .opacityBtn {
+                background-color: $red-opcit;
+
+                a {
+                    color: $red-color;
+
+                }
+            }
+
+        }
+
+
+
+        .iconsTwo {
+            padding: 30px 0 0;
+            // background-color: #d9d9d9;
+
+            i {
+                font-size: 18px;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: $icons-color-opaci;
+                margin: 0 5px;
+                transition: 0.5s;
+
+                &:hover {
+                    background-color: $red-color;
+                    font-size: 20px;
+
+                }
+            }
+        }
+    }
+
+    .cardContPartTwo {
+        .bio-section {
+            margin: 0 0 35px;
+
+            .tag {
+                margin: 0 0 16px;
+
+                .section-tag {
+                    @extend %tag-button;
+                    // padding: 6px 16px;
+                    // font-size: 13px;
+                    // font-family: $para-font;
+                    // font-weight: 600;
+                    // text-transform: uppercase;
+                    // color: $red-color;
+                    // background-color: $red-opcit;
+                    // border-radius: 15px;
+                    // letter-spacing: 0.5px;
+                    // line-height: 20px;
+                }
+            }
+
+            h2 {
+                font-family: $haeder-font;
+                font-size: 36px;
+                color: #ededed;
+                margin: 0 0 24px;
+            }
+
+            p {
+                font-family: $para-font;
+                font-size: 16px;
+                margin: 0 0 16px;
+                color: #d9d9d9;
+
+
+            }
+        }
+
+        .details-section {
+            .detail {
+                background-color: $cardBg;
+                padding: 20px;
+                border-radius: 15px;
+                border: solid 1px $icons-color-opaci;
+                transition: all 1s ease-in-out;
+
+                // transform: scale(1);
+                &:hover {
+                    border: solid 1px $red-color;
+                    padding: 22px;
+                }
+
+                .iconDet {
+                    color: $red-color;
+                    font-size: 28px;
+                }
+
+                .cardDet {
+                    span {
+                        color: $para-color-opaci;
+                        font-size: 13px;
+                        font-family: $para-font;
+                        letter-spacing: 0.5px;
+                        text-transform: uppercase;
+                        // background-color: #d9d9d9;
+                    }
+
+                    strong {
+                        color: $para-color;
+                        font-size: 16px;
+                        font-family: $para-font;
+
+                    }
+                }
+            }
+
+            .skills {
+                .bio-skills {
+                    .tag {
+                        margin: 0 0 16px;
+
+                        .skills-tag {
+                            @extend %tag-button;
+
+                            // padding: 6px 16px;
+                            // font-size: 13px;
+                            // font-family: $para-font;
+                            // font-weight: 600;
+                            // text-transform: uppercase;
+                            // color: $red-color;
+                            // background-color: $red-opcit;
+                            // border-radius: 15px;
+                            // letter-spacing: 0.5px;
+
+
+
+                        }
+                    }
+
+                    h3 {
+                        font-size: 28px;
+                        font-family: $haeder-font;
+                        font-weight: 700;
+                        line-height: 33px;
+                        margin: 0 0 32px;
+                        color: #ededed;
+                    }
+                }
+
+                .skills-info {
+                    margin: 0 0 28px;
+
+                    .percent-skill {
+                        .skill {
+
+                            font-family: $para-font;
+                            font-size: 15px;
+                            font-weight: 600;
+                            color: #ededed;
+                        }
+
+                        .skill-percent {
+                            color: $red-color;
+                            font-family: $para-font;
+                            font-weight: 700;
+                            font-size: 15px;
+                        }
+                    }
+
+                    .progress {
+                        background: $cardBg;
+
+                        .progress-color {
+                            background: $progress-barBg;
+
+                        }
+                    }
+
+                }
+
+
+
+            }
+        }
+
+    }
+
+
+
+}
+
+.three {
+    @extend %main-section-padding-bg;
+
+    .threeHeader {
+        @extend %margin-padding-header;
+
+
+        span {
+            @extend %tag-header;
+        }
+
+        h2 {
+            @extend %main-header;
+        }
+
+        p {
+            @extend %para-heading;
+        }
+    }
+
+    .cv-section {
+        // position: relative;
+
+        // // column-gap: 40px;
+        // &::after {
+
+        //     content: "";
+        //     position: absolute;
+        //     top: 0;
+        //     bottom: 0;
+        //     left: 50%;
+        //     width: 2px;
+        //     background-color: $red-opcit;
+        //     transform: translateX(-50%);
+        //     //   margin: 5px auto;
+
+        // }
+
+        .divpadding {
+            margin: 48px 0 0;
+            padding: 0 12px;
+            color: #cdcdcd;
+
+            .Experience-section {
+                .header {
+                    @extend %section-three-sub-header;
+
+                    // span{
+                    //     font-size: 13px;
+                    //     font-family: $para-font;
+                    //     font-weight: 600;
+                    //     color: #fff;
+                    //     text-transform: uppercase;
+                    //     letter-spacing: 1.36px;
+                    //     padding:7px 16px;
+                    //     margin: 0  0 16px;
+                    //     border-radius: 15px;
+                    //     background-image: $tagBg;
+                    //     line-height: 13px;
+                    //     display: inline-block;
+                    // }
+                    // h2{
+                    //     font-size:26px ;
+                    //     font-family: $haeder-font;
+                    //     font-size: 36px;
+                    //     font-weight: 600;
+                    //     color: #ededed;
+                    //     text-transform: capitalize;
+                    //     letter-spacing: -1px;
+                    //     margin: 0 0 16px;
+
+
+                    // }
+                    // p{
+                    //     font-size: 16px;
+                    //     font-family: $para-font;
+                    //     font-weight: 400;
+                    //     line-height: 27px;
+                    //     color: $para-color-opaci;
+
+                    // }
+                }
+
+                .all-experience {
+
+                    .experiences-current-details {
+                        background-color: black;
+                        border-radius: 15px;
+                        padding: 35px;
+                        border: solid 1px $red-color;
+
+                        .headerDetails {
+                            .subHeader {
+                                margin: 0 0 24px;
+
+                                .iconCv {
+                                    i {
+                                        font-size: 20px;
+                                        padding: 12px;
+                                        background-color: $red-color;
+                                        border-radius: 10px;
+                                        line-height: 24px;
+                                    }
+
+                                }
+
+                                .Current {
+
+                                    @extend %tag-button;
+                                }
+                            }
+
+                        }
+
+                        .details {
+                            @extend %cv-details;
+                            //                     h3{
+                            //     margin: 0 0 8px;
+                            //     font-size: 22px;
+                            //     font-family: $haeder-font;
+                            //     color: #ededed;
+
+                            // }
+                            // .company-name{
+                            //     margin: 0 0 4px;
+                            //     font-family: $para-font;
+                            //     font-size: 16px;
+                            //     color: $para-color-opaci;
+                            // }
+                            // .durationTag{
+                            //     span{
+                            //                             @extend %tag-button;
+
+
+                            //     }
+                            //     margin: 0 0 16px;
+
+                            // }
+                            // .desciption{
+                            //     color: $para-color-opaci;
+                            //     margin: 0 0 24px;
+                            //     font-size: 15.5px;
+                            //     font-family: $para-font;
+
+                            // }
+                        }
+
+                        .buttons {
+                            span {
+                                @extend %tag-button;
+                            }
+                        }
+
+                    }
+
+                    .experiences-details {
+
+                        background: $cardBg;
+                        padding: 32px;
+                        border-radius: 15px;
+                        border: solid $icons-color-opaci 1px;
+
+                        &:hover {
+                            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+                            border: solid $red-opcit 1px;
+
+
+                        }
+
+                        .iconCv {
+                            margin: 0 0 24px;
+
+                            i {
+                                @extend %iconCV;
+                            }
+                        }
+                    }
+
+                    .details {
+                        @extend %cv-details;
+                    }
+                }
+            }
+
+        }
+
+        .divpadding {
+            .education-section {
+                @extend %section-three-sub-header;
+                // position: relative;
+
+
+                .dividerthree {
+                    // background: red;
+                    position: relative;
+
+                    .divider {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 50%;
+                        width: 2px;
+                        background: linear-gradient(135deg, $red-color, color-mix(in srgb, $red-color, #6c5ce7 20%));
+                        transform: translateX(-50%);
+                        height: 100vh;
+
+
+                    }
+
+                    .certIcon,
+                    .gradIcon,
+                    .bookIcon {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: linear-gradient(135deg, $red-color, color-mix(in srgb, $red-color, #6c5ce7 20%));
+                        color: white;
+                        border-radius: 50%;
+                        padding: 10px;
+                        border: solid black 1px;
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 2;
+
+
+                    }
+
+                    .gradIcon {
+                        top: 0vh;
+                    }
+
+                    .bookIcon {
+                        top: 50vh;
+
+                    }
+
+                    .certIcon {
+                        top: 100vh;
+                    }
+
+                    @media screen and (max-width: 578px) {
+
+                        display: none;
+                    }
+                }
+
+            }
+
+
+
+            .education-details {
+                background: #1c1c1c;
+                border: solid 1px $icons-color-opaci;
+                border-radius: 15px;
+                padding: 28px;
+
+                &:hover {
+                    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+                    border: solid $red-opcit 1px;
+
+
+                }
+
+
+
+                .education-header {
+                    margin: 0 0 16px;
+
+                    .date {
+                        @extend %tag-button;
+                    }
+
+                    .degree {
+                        color: color-mix(in srgb, #ededed, transparent 40%);
+                        text-transform: uppercase;
+                        font-family: $para-font;
+                        font-size: 13px;
+
+
+
+                    }
+                }
+
+                .degree-title {
+                    font-family: $haeder-font;
+                    font-size: 20px;
+                    color: #ededed;
+                    margin: 0 0 8px;
+                }
+
+                .collage {
+                    font-size: 16px;
+                    font-family: $para-font;
+                    color: color-mix(in srgb, #ededed, transparent 25%);
+                    margin: 0 0 16px;
+                }
+
+                .degree-info {
+                    color: color-mix(in srgb, #ededed, transparent 35%);
+                    font-size: 15.5px;
+                    font-family: $para-font;
+                    margin: 0 0 15px;
+                }
+
+                .marker {
+                    padding: 10px 16px;
+                    font-size: 14px;
+                    font-family: $para-font;
+                    text-transform: uppercase;
+                    color: $red-color;
+                    background-color: $red-opcit;
+                    border-radius: 10px;
+                    letter-spacing: 0.5px;
+                    border-left: solid 3px;
+
+
+                }
+
+                .certificate {
+                    padding: 12.5px 0;
+
+                    .degrees {
+                        font-family: $para-font;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #ededed;
+
+                    }
+
+                    .dates {
+                        @extend %tag-button;
+                    }
+
+
+
+
+                }
+
+                .border-bottom-top {
+                    border-bottom: 1px $icons-color-opaci solid;
+                    border-top: 1px $icons-color-opaci solid;
+
+
+                }
+
+            }
+
+        }
+    }
+
+}
+
+.four {
+    @extend %main-section-padding-bg;
+
+    .header {
+        @extend %margin-padding-header;
+
+        span {
+            @extend %tag-header;
+        }
+
+        h2 {
+            @extend %main-header;
+        }
+
+        p {
+            @extend %para-heading;
+        }
+
+    }
+
+    .cards {
+        .cardFour {
+            background: $cardBg;
+            border-radius: 15px;
+            border: solid 2px $icons-color-opaci;
+            border-top-width: 1px;
+
+            padding: 35px 25px;
+            color: #d9d9d9;
+            transition: border-top-width 2s;
+
+            .iconHeader {
+                i {
+                    padding: 20px;
+                    background-color: $red-opcit;
+                    color: $red-color;
+                    font-size: 32px;
+                    border-radius: 10px;
+                    margin: 0 46px 20px;
+                    transition: 0.5s ease-in-out;
+
+                    &:hover {
+                        // color: #d9d9d9;
+                        // background: $red-color;
+                        // transform: rotate(30deg);
+                    }
+                }
+            }
+
+            h4 {
+                font-size: 20px;
+                font-family: $haeder-font;
+                color: #ededed;
+                margin: 0 0 12px;
+            }
+
+            p {
+                font-size: 14px;
+                font-family: $para-font;
+                color: color-mix(in srgb, #ededed, transparent 25%);
+            }
+
+            a {
+                text-decoration: none;
+                color: #ededed;
+                font-size: 14px;
+                transition: 1s ease-in-out;
+
+                span {
+                    padding: 0 2px 0 0;
+                }
+
+                &:hover {
+                    color: $red-color;
+
+                    span {
+                        padding: 0 8px 0 0;
+                    }
+
+                }
+            }
+
+            &:hover {
+                // border: 3px 1px 1px 1px;
+                border-top-width: 5px;
+                box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+                border: solid $red-opcit 2px;
+
+
+                .iconHeader {
+                    i {
+                        color: #d9d9d9;
+                        background: $red-color;
+                        transform: rotate(20deg);
+
+
+                    }
+                }
+
+                a {
+                    color: $red-color;
+
+                    span {
+                        padding: 0 8px 0 0;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+}
+
+.five {
+    @extend %main-section-padding-bg;
+
+    .header {
+        @extend %margin-padding-header;
+
+        span {
+            @extend %tag-header;
+        }
+
+        h2 {
+            @extend %main-header;
+        }
+
+        p {
+            @extend %para-heading;
+        }
+
+    }
+
+    .lists {
+        padding: 0 0 50px;
+
+        ul {
+            flex-wrap: wrap;
+
+            li {
+                a {
+                    color: #dedede;
+                    font-size: 14px;
+                    font-family: $para-font;
+                    font-weight: 500;
+                    text-decoration: none;
+
+
+                }
+
+                list-style: none;
+                padding: 8px 8px;
+                border-radius: 5px;
+                border: 0.5px $para-color-opaci solid;
+                text-transform: capitalize;
+                transition: 1s ease-in-out;
+
+                &:hover {
+                    background: $red-color;
+                    border: none;
+                }
+            }
+
+            .active {
+                background: $red-color;
+                border: none;
+            }
+
+        }
+
+    }
+
+    .portfolioCards {
+        .portCard {
+            .parent {
+                position: relative;
+                width: 100%;
+                height: 300px;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                    object-fit: cover;
+                    z-index: 1;
+
+                }
+
+                .imgCover {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.392);
+                    border-radius: 15px;
+                    opacity: 0;
+                    transition: opacity 1s ease-in-out;
+                    padding: 10px;
+                    z-index: 2;
+
+                    span {
+                        padding: 4px 10px;
+                        margin: 0 0 8px;
+                        background: #ffffef;
+                        border-radius: 10px;
+                        font-size: 12px;
+                        font-weight: 400;
+                        font-family: $para-font;
+                        color: $red-color;
+                        text-transform: uppercase;
+                        display: inline;
+                    }
+
+                    h4 {
+                        color: white;
+                        font-family: $haeder-font;
+                        font-weight: 600;
+                        font-size: 18px;
+                        text-transform: capitalize;
+
+                    }
+                }
+
+                &:hover .imgCover {
+                    opacity: 1;
+                }
+
+                .iconCard {
+                    i {
+                        padding: 10px;
+                        background-color: #ffffef;
+                        color: $red-color;
+                        border-radius: 50%;
+                        // font-family: $para-font;
+                        font-size: 18px;
+                        width: 40;
+                        height: 40;
+                        // font-weight: 200;
+
+                    }
+                }
+
+            }
+
+            .footerCard {
+                margin: 15px 0 0 0;
+
+                .tag {
+                    @extend %tag-button;
+                }
+
+                .year {
+                    color: color-mix(in srgb, $para-color, transparent 40%);
+
+                }
+
+            }
+
+        }
+    }
+
+}
+
+.six {
+    @extend %main-section-padding-bg;
+
+    .header {
+        @extend %margin-padding-header;
+
+        span {
+            @extend %tag-header;
+        }
+
+        h2 {
+            @extend %main-header;
+        }
+
+        p {
+            @extend %para-heading;
+        }
+
+    }
+
+    .contactInfo {
+        .cardSix {
+            padding: 30px;
+            background: $cardBg;
+            border-radius: 10px;
+            border: solid 1px $icons-color-opaci;
+
+            .tagButton {
+                padding: 15px;
+
+                i {
+                    background-color: $red-opcit;
+                    padding: 10px;
+                    border-radius: 50%;
+                    color: $red-color; // @extend %tag-button;
+
+                }
+            }
+
+            h3 {
+                font-family: $haeder-font;
+                font-size: 18px;
+                color: #ededed;
+                margin: 0 0 5px;
+            }
+
+            p {
+                font-family: $para-font;
+                font-size: 14px;
+                color: #d9d9dd;
+
+            }
+
+        }
+
+
+    }
+
+    .contactForm {
+        background: $cardBg;
+        padding: 30px 20px;
+        border-radius: 10px;
+        border: solid 1px $icons-color-opaci;
+    }
+
+    input,
+    textarea {
+        background-color: $cardBg;
+        border: solid 1px $icons-color-opaci;
+
+        &::placeholder {
+            color: $para-color-opaci;
+
+
+        }
+    }
+
+    button {
+        padding: 12px 40px;
+        font-size: 14px;
+        font-family: $para-font;
+        background-color: $red-color;
+        color: #ededed;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+            background-color: transparent;
+            color: $red-color;
+            border-color: $red-color;
+        }
+    }
+
+}
+
+.footer {
+
+    @extend %main-section-padding-bg;
+    color: #ededed;
+
+    h4 {
+        text-transform: capitalize;
+
+        a {
+            text-decoration: none;
+            font-size: 30px;
+            font-family: $haeder-font;
+            font-weight: 300;
+
+        }
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            font-weight: $para-font;
+            text-transform: capitalize;
+        }
+
+    }
+
+}

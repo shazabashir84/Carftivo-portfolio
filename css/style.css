@@ -1,0 +1,749 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer, .six, .five, .four, .three, .two {
+  padding: 60px 0;
+  background-color: #141414;
+}
+
+.six .header span, .five .header span, .four .header span, .three .threeHeader span, .two .headerTwo span {
+  color: #ff4d4f;
+  font-size: 14px;
+  font-family: "Roboto Flex", sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 24px;
+  position: relative;
+}
+.six .header span::after, .five .header span::after, .four .header span::after, .three .threeHeader span::after, .two .headerTwo span::after {
+  content: " ";
+  height: 0.5px;
+  width: 50px;
+  background-color: #ff4d4f;
+  display: block;
+  margin: 8px auto;
+  /* auto to center line*/
+}
+
+.six .header h2, .five .header h2, .four .header h2, .three .threeHeader h2, .two .headerTwo h2 {
+  margin: 0 0 24px;
+  font-family: "Mulish", sans-serif;
+  font-size: 56px;
+  color: #ededed;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.six .header, .five .header, .four .header, .three .threeHeader, .two .headerTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 22px;
+  padding: 0 12px 60px;
+}
+
+.six .header p, .five .header p, .four .header p, .three .threeHeader p, .two .headerTwo p {
+  margin: 0 18px;
+  font-size: 18px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  color: #d9d9d9;
+  line-height: 32px;
+  max-width: 900px;
+}
+
+.three .cv-section .divpadding .education-section span, .three .cv-section .divpadding .Experience-section .header span {
+  font-size: 13px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.36px;
+  padding: 13px 19.2px;
+  margin: 0 0 16px;
+  border-radius: 15px;
+  background-image: linear-gradient(135deg, #ff4d4f, color-mix(in srgb, #ff4d4f, #6c5ce7 20%));
+  line-height: 13px;
+  display: inline-block;
+}
+.three .cv-section .divpadding .education-section h2, .three .cv-section .divpadding .Experience-section .header h2 {
+  font-size: 26px;
+  font-family: "Mulish", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #ededed;
+  text-transform: capitalize;
+  letter-spacing: -1px;
+  margin: 0 0 16px;
+}
+.three .cv-section .divpadding .education-section p, .three .cv-section .divpadding .Experience-section .header p {
+  font-size: 16px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  line-height: 27px;
+  color: color-mix(in srgb, #d9d9d9, transparent 30%);
+}
+
+.five .portfolioCards .portCard .footerCard .tag, .three .cv-section .divpadding .education-details .certificate .dates, .three .cv-section .divpadding .education-details .education-header .date, .three .cv-section .divpadding .Experience-section .all-experience .experiences-current-details .buttons span, .three .cv-section .divpadding .Experience-section .all-experience .experiences-current-details .headerDetails .subHeader .Current, .two .cardContPartTwo .details-section .skills .bio-skills .tag .skills-tag, .two .cardContPartTwo .bio-section .tag .section-tag, .three .cv-section .divpadding .Experience-section .all-experience .details .durationTag span, .three .cv-section .divpadding .Experience-section .all-experience .experiences-current-details .details .durationTag span {
+  padding: 8px 16px;
+  font-size: 13px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ff4d4f;
+  background-color: color-mix(in srgb, #ff4d4f, transparent 90%);
+  border-radius: 15px;
+  letter-spacing: 0.5px;
+}
+
+.three .cv-section .divpadding .Experience-section .all-experience .experiences-details .iconCv i {
+  font-size: 20px;
+  padding: 12px;
+  background-color: #ff4d4f;
+  border-radius: 10px;
+  line-height: 24px;
+}
+
+.three .cv-section .divpadding .Experience-section .all-experience .details h3, .three .cv-section .divpadding .Experience-section .all-experience .experiences-current-details .details h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-family: "Mulish", sans-serif;
+  color: #ededed;
+}
+.three .cv-section .divpadding .Experience-section .all-experience .details .company-name, .three .cv-section .divpadding .Experience-section .all-experience .experiences-current-details .details .company-name {
+  margin: 0 0 4px;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  color: color-mix(in srgb, #d9d9d9, transparent 30%);
+}
+.three .cv-section .divpadding .Experience-section .all-experience .details .durationTag, .three .cv-section .divpadding .Experience-section .all-experience .experiences-current-details .details .durationTag {
+  margin: 0 0 16px;
+}
+.three .cv-section .divpadding .Experience-section .all-experience .details .desciption, .three .cv-section .divpadding .Experience-section .all-experience .experiences-current-details .details .desciption {
+  color: color-mix(in srgb, #d9d9d9, transparent 30%);
+  margin: 0 0 24px;
+  font-size: 15.5px;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.one {
+  background-image: url(../images/profile-bg-5.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  max-width: 100%;
+  width: 100%;
+}
+.one .oneLayer {
+  background-color: rgba(0, 0, 0, 0.727);
+  height: 100vh;
+}
+.one .oneLayer .logo h3 a {
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+}
+.one .oneLayer .navLinks ul li {
+  list-style: none;
+}
+.one .oneLayer .navLinks ul li a {
+  text-decoration: none;
+  color: #d9d9d9;
+  font-weight: 400;
+  line-height: 24px;
+  transition: all 0.5s ease;
+}
+.one .oneLayer .navLinks ul li a:hover {
+  color: #ff4d4f;
+}
+.one .oneLayer .oneContent {
+  height: 90vh;
+  text-align: center;
+}
+.one .oneLayer .oneContent h2 {
+  font-family: "Mulish", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 57px;
+  color: #fff;
+}
+.one .oneLayer .oneContent p {
+  color: #ff4d4f;
+  text-transform: capitalize;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 24px;
+  padding: 10px 0 0 0;
+  line-height: 36px;
+  margin: 0 0 10px;
+}
+.one .oneLayer .oneContent p .white {
+  color: #d9d9d9;
+}
+.one .oneLayer .oneContent p .auto-type {
+  border-bottom: #ff4d4f solid 1px;
+  /* Add this to your CSS or SCSS file */
+}
+.one .oneLayer .oneContent .icons {
+  padding: 30px 0 0 0;
+}
+.one .oneLayer .oneContent .icons .iconLink {
+  border-radius: 50%;
+  padding: 15px;
+  margin-left: 5px;
+  background: color-mix(in srgb, #d9d9d9, transparent 94%);
+  color: white;
+  font-size: 20px;
+}
+
+.two .cardCont {
+  background-color: rgb(28, 28, 28);
+  padding: 40px;
+  border-radius: 20px;
+  color: #d9d9d9;
+}
+.two .cardCont .cardHeader {
+  position: relative;
+  padding: 0 0 30px;
+}
+.two .cardCont .cardHeader img {
+  border-radius: 50%;
+  border: solid 5px #ff4d4f;
+  padding: 2px;
+  margin: 16px;
+}
+.two .cardCont .cardHeader h3 {
+  font-family: "Mulish", sans-serif;
+  font-size: 24px;
+  margin: 0 0 8px;
+  color: #d9d9d9;
+}
+.two .cardCont .cardHeader span {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 15px;
+  margin: 0 0 16px;
+  color: #ff4d4f;
+}
+.two .cardCont .cardHeader i {
+  color: #fbbf24;
+  margin: 12px 0 0;
+}
+.two .cardCont .dividers {
+  width: 100%;
+  display: block;
+  height: 0.5px;
+  background-color: color-mix(in srgb, #d9d9d9, transparent 94%);
+  margin: auto;
+}
+.two .cardCont .cardCounter {
+  padding: 30px 0;
+}
+.two .cardCont .cardCounter .cardBody h4 {
+  font-family: "Mulish", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff4d4f;
+  margin: 0 0 6px;
+}
+.two .cardCont .cardCounter .cardBody .para {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 13px;
+  color: color-mix(in srgb, #d9d9d9, transparent 30%);
+  text-transform: uppercase;
+}
+.two .cardCont .cardButtons {
+  padding: 30px 0;
+}
+.two .cardCont .cardButtons button {
+  padding: 12px 24px;
+  background-color: #ff4d4f;
+  border-radius: 12px;
+}
+.two .cardCont .cardButtons button a {
+  text-decoration: none;
+  color: #d9d9d9;
+  font-size: 15px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 600;
+}
+.two .cardCont .cardButtons .opacityBtn {
+  background-color: color-mix(in srgb, #ff4d4f, transparent 90%);
+}
+.two .cardCont .cardButtons .opacityBtn a {
+  color: #ff4d4f;
+}
+.two .cardCont .iconsTwo {
+  padding: 30px 0 0;
+}
+.two .cardCont .iconsTwo i {
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: color-mix(in srgb, #d9d9d9, transparent 94%);
+  margin: 0 5px;
+  transition: 0.5s;
+}
+.two .cardCont .iconsTwo i:hover {
+  background-color: #ff4d4f;
+  font-size: 20px;
+}
+.two .cardContPartTwo .bio-section {
+  margin: 0 0 35px;
+}
+.two .cardContPartTwo .bio-section .tag {
+  margin: 0 0 16px;
+}
+.two .cardContPartTwo .bio-section h2 {
+  font-family: "Mulish", sans-serif;
+  font-size: 36px;
+  color: #ededed;
+  margin: 0 0 24px;
+}
+.two .cardContPartTwo .bio-section p {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  margin: 0 0 16px;
+  color: #d9d9d9;
+}
+.two .cardContPartTwo .details-section .detail {
+  background-color: rgb(28, 28, 28);
+  padding: 20px;
+  border-radius: 15px;
+  border: solid 1px color-mix(in srgb, #d9d9d9, transparent 94%);
+  transition: all 1s ease-in-out;
+}
+.two .cardContPartTwo .details-section .detail:hover {
+  border: solid 1px #ff4d4f;
+  padding: 22px;
+}
+.two .cardContPartTwo .details-section .detail .iconDet {
+  color: #ff4d4f;
+  font-size: 28px;
+}
+.two .cardContPartTwo .details-section .detail .cardDet span {
+  color: color-mix(in srgb, #d9d9d9, transparent 30%);
+  font-size: 13px;
+  font-family: "Roboto Flex", sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.two .cardContPartTwo .details-section .detail .cardDet strong {
+  color: #d9d9d9;
+  font-size: 16px;
+  font-family: "Roboto Flex", sans-serif;
+}
+.two .cardContPartTwo .details-section .skills .bio-skills .tag {
+  margin: 0 0 16px;
+}
+.two .cardContPartTwo .details-section .skills .bio-skills h3 {
+  font-size: 28px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  line-height: 33px;
+  margin: 0 0 32px;
+  color: #ededed;
+}
+.two .cardContPartTwo .details-section .skills .skills-info {
+  margin: 0 0 28px;
+}
+.two .cardContPartTwo .details-section .skills .skills-info .percent-skill .skill {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ededed;
+}
+.two .cardContPartTwo .details-section .skills .skills-info .percent-skill .skill-percent {
+  color: #ff4d4f;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+.two .cardContPartTwo .details-section .skills .skills-info .progress {
+  background: rgb(28, 28, 28);
+}
+.two .cardContPartTwo .details-section .skills .skills-info .progress .progress-color {
+  background: linear-gradient(90deg, #ff4d4f, color-mix(in srgb, #ff4d4f, #ff6b9d 50%));
+}
+
+.three .cv-section .divpadding {
+  margin: 48px 0 0;
+  padding: 0 12px;
+  color: #cdcdcd;
+}
+.three .cv-section .divpadding .Experience-section .all-experience .experiences-current-details {
+  background-color: black;
+  border-radius: 15px;
+  padding: 35px;
+  border: solid 1px #ff4d4f;
+}
+.three .cv-section .divpadding .Experience-section .all-experience .experiences-current-details .headerDetails .subHeader {
+  margin: 0 0 24px;
+}
+.three .cv-section .divpadding .Experience-section .all-experience .experiences-current-details .headerDetails .subHeader .iconCv i {
+  font-size: 20px;
+  padding: 12px;
+  background-color: #ff4d4f;
+  border-radius: 10px;
+  line-height: 24px;
+}
+.three .cv-section .divpadding .Experience-section .all-experience .experiences-details {
+  background: rgb(28, 28, 28);
+  padding: 32px;
+  border-radius: 15px;
+  border: solid color-mix(in srgb, #d9d9d9, transparent 94%) 1px;
+}
+.three .cv-section .divpadding .Experience-section .all-experience .experiences-details:hover {
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  border: solid color-mix(in srgb, #ff4d4f, transparent 90%) 1px;
+}
+.three .cv-section .divpadding .Experience-section .all-experience .experiences-details .iconCv {
+  margin: 0 0 24px;
+}
+.three .cv-section .divpadding .education-section .dividerthree {
+  position: relative;
+}
+.three .cv-section .divpadding .education-section .dividerthree .divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: linear-gradient(135deg, #ff4d4f, color-mix(in srgb, #ff4d4f, #6c5ce7 20%));
+  transform: translateX(-50%);
+  height: 100vh;
+}
+.three .cv-section .divpadding .education-section .dividerthree .certIcon,
+.three .cv-section .divpadding .education-section .dividerthree .gradIcon,
+.three .cv-section .divpadding .education-section .dividerthree .bookIcon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #ff4d4f, color-mix(in srgb, #ff4d4f, #6c5ce7 20%));
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  border: solid black 1px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.three .cv-section .divpadding .education-section .dividerthree .gradIcon {
+  top: 0vh;
+}
+.three .cv-section .divpadding .education-section .dividerthree .bookIcon {
+  top: 50vh;
+}
+.three .cv-section .divpadding .education-section .dividerthree .certIcon {
+  top: 100vh;
+}
+@media screen and (max-width: 578px) {
+  .three .cv-section .divpadding .education-section .dividerthree {
+    display: none;
+  }
+}
+.three .cv-section .divpadding .education-details {
+  background: #1c1c1c;
+  border: solid 1px color-mix(in srgb, #d9d9d9, transparent 94%);
+  border-radius: 15px;
+  padding: 28px;
+}
+.three .cv-section .divpadding .education-details:hover {
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  border: solid color-mix(in srgb, #ff4d4f, transparent 90%) 1px;
+}
+.three .cv-section .divpadding .education-details .education-header {
+  margin: 0 0 16px;
+}
+.three .cv-section .divpadding .education-details .education-header .degree {
+  color: color-mix(in srgb, #ededed, transparent 40%);
+  text-transform: uppercase;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 13px;
+}
+.three .cv-section .divpadding .education-details .degree-title {
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  color: #ededed;
+  margin: 0 0 8px;
+}
+.three .cv-section .divpadding .education-details .collage {
+  font-size: 16px;
+  font-family: "Roboto Flex", sans-serif;
+  color: color-mix(in srgb, #ededed, transparent 25%);
+  margin: 0 0 16px;
+}
+.three .cv-section .divpadding .education-details .degree-info {
+  color: color-mix(in srgb, #ededed, transparent 35%);
+  font-size: 15.5px;
+  font-family: "Roboto Flex", sans-serif;
+  margin: 0 0 15px;
+}
+.three .cv-section .divpadding .education-details .marker {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-family: "Roboto Flex", sans-serif;
+  text-transform: uppercase;
+  color: #ff4d4f;
+  background-color: color-mix(in srgb, #ff4d4f, transparent 90%);
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  border-left: solid 3px;
+}
+.three .cv-section .divpadding .education-details .certificate {
+  padding: 12.5px 0;
+}
+.three .cv-section .divpadding .education-details .certificate .degrees {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ededed;
+}
+.three .cv-section .divpadding .education-details .border-bottom-top {
+  border-bottom: 1px color-mix(in srgb, #d9d9d9, transparent 94%) solid;
+  border-top: 1px color-mix(in srgb, #d9d9d9, transparent 94%) solid;
+}
+
+.four .cards .cardFour {
+  background: rgb(28, 28, 28);
+  border-radius: 15px;
+  border: solid 2px color-mix(in srgb, #d9d9d9, transparent 94%);
+  border-top-width: 1px;
+  padding: 35px 25px;
+  color: #d9d9d9;
+  transition: border-top-width 2s;
+}
+.four .cards .cardFour .iconHeader i {
+  padding: 20px;
+  background-color: color-mix(in srgb, #ff4d4f, transparent 90%);
+  color: #ff4d4f;
+  font-size: 32px;
+  border-radius: 10px;
+  margin: 0 46px 20px;
+  transition: 0.5s ease-in-out;
+}
+.four .cards .cardFour h4 {
+  font-size: 20px;
+  font-family: "Mulish", sans-serif;
+  color: #ededed;
+  margin: 0 0 12px;
+}
+.four .cards .cardFour p {
+  font-size: 14px;
+  font-family: "Roboto Flex", sans-serif;
+  color: color-mix(in srgb, #ededed, transparent 25%);
+}
+.four .cards .cardFour a {
+  text-decoration: none;
+  color: #ededed;
+  font-size: 14px;
+  transition: 1s ease-in-out;
+}
+.four .cards .cardFour a span {
+  padding: 0 2px 0 0;
+}
+.four .cards .cardFour a:hover {
+  color: #ff4d4f;
+}
+.four .cards .cardFour a:hover span {
+  padding: 0 8px 0 0;
+}
+.four .cards .cardFour:hover {
+  border-top-width: 5px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  border: solid color-mix(in srgb, #ff4d4f, transparent 90%) 2px;
+}
+.four .cards .cardFour:hover .iconHeader i {
+  color: #d9d9d9;
+  background: #ff4d4f;
+  transform: rotate(20deg);
+}
+.four .cards .cardFour:hover a {
+  color: #ff4d4f;
+}
+.four .cards .cardFour:hover a span {
+  padding: 0 8px 0 0;
+}
+
+.five .lists {
+  padding: 0 0 50px;
+}
+.five .lists ul {
+  flex-wrap: wrap;
+}
+.five .lists ul li {
+  list-style: none;
+  padding: 8px 8px;
+  border-radius: 5px;
+  border: 0.5px color-mix(in srgb, #d9d9d9, transparent 30%) solid;
+  text-transform: capitalize;
+  transition: 1s ease-in-out;
+}
+.five .lists ul li a {
+  color: #dedede;
+  font-size: 14px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+.five .lists ul li:hover {
+  background: #ff4d4f;
+  border: none;
+}
+.five .lists ul .active {
+  background: #ff4d4f;
+  border: none;
+}
+.five .portfolioCards .portCard .parent {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.five .portfolioCards .portCard .parent img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+.five .portfolioCards .portCard .parent .imgCover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.392);
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  padding: 10px;
+  z-index: 2;
+}
+.five .portfolioCards .portCard .parent .imgCover span {
+  padding: 4px 10px;
+  margin: 0 0 8px;
+  background: #ffffef;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto Flex", sans-serif;
+  color: #ff4d4f;
+  text-transform: uppercase;
+  display: inline;
+}
+.five .portfolioCards .portCard .parent .imgCover h4 {
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.five .portfolioCards .portCard .parent:hover .imgCover {
+  opacity: 1;
+}
+.five .portfolioCards .portCard .parent .iconCard i {
+  padding: 10px;
+  background-color: #ffffef;
+  color: #ff4d4f;
+  border-radius: 50%;
+  font-size: 18px;
+  width: 40;
+  height: 40;
+}
+.five .portfolioCards .portCard .footerCard {
+  margin: 15px 0 0 0;
+}
+.five .portfolioCards .portCard .footerCard .year {
+  color: color-mix(in srgb, #d9d9d9, transparent 40%);
+}
+
+.six .contactInfo .cardSix {
+  padding: 30px;
+  background: rgb(28, 28, 28);
+  border-radius: 10px;
+  border: solid 1px color-mix(in srgb, #d9d9d9, transparent 94%);
+}
+.six .contactInfo .cardSix .tagButton {
+  padding: 15px;
+}
+.six .contactInfo .cardSix .tagButton i {
+  background-color: color-mix(in srgb, #ff4d4f, transparent 90%);
+  padding: 10px;
+  border-radius: 50%;
+  color: #ff4d4f;
+}
+.six .contactInfo .cardSix h3 {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  color: #ededed;
+  margin: 0 0 5px;
+}
+.six .contactInfo .cardSix p {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 14px;
+  color: #d9d9dd;
+}
+.six .contactForm {
+  background: rgb(28, 28, 28);
+  padding: 30px 20px;
+  border-radius: 10px;
+  border: solid 1px color-mix(in srgb, #d9d9d9, transparent 94%);
+}
+.six input,
+.six textarea {
+  background-color: rgb(28, 28, 28);
+  border: solid 1px color-mix(in srgb, #d9d9d9, transparent 94%);
+}
+.six input::-moz-placeholder, .six textarea::-moz-placeholder {
+  color: color-mix(in srgb, #d9d9d9, transparent 30%);
+}
+.six input::placeholder,
+.six textarea::placeholder {
+  color: color-mix(in srgb, #d9d9d9, transparent 30%);
+}
+.six button {
+  padding: 12px 40px;
+  font-size: 14px;
+  font-family: "Roboto Flex", sans-serif;
+  background-color: #ff4d4f;
+  color: #ededed;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  transition: 0.5s ease-in-out;
+}
+.six button:hover {
+  background-color: transparent;
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+.footer {
+  color: #ededed;
+}
+.footer h4 {
+  text-transform: capitalize;
+}
+.footer h4 a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul li {
+  font-weight: "Roboto Flex", sans-serif;
+  text-transform: capitalize;
+}/*# sourceMappingURL=style.css.map */
